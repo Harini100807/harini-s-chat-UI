@@ -4,160 +4,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern SaaS Homepage</title>
-    <!-- Tailwind CSS CDN Link -->
+    <title>WhatsApp Chat UI</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <style>
-        /* Custom Styles */
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-
-        /* Navbar Styling */
-        nav a {
-            transition: color 0.3s ease;
-        }
-
-        /* Hero Section */
-        section.bg-indigo-600 {
-            background-image: linear-gradient(to bottom, #4c51bf, #2b396d);
-        }
-
-        section.bg-indigo-600 a {
-            transition: background-color 0.3s ease;
-        }
-
-        /* Features Section */
-        section#features .text-center h3 {
-            color: #5a67d8; /* Indigo */
-        }
-
-        /* Pricing Section */
-        section#pricing .bg-white {
-            transition: transform 0.3s ease-in-out;
-        }
-
-        section#pricing .bg-white:hover {
-            transform: scale(1.05);
-        }
-
-        /* Button Hover Effects */
-        section a:hover {
-            transform: scale(1.1);
-        }
-
-        /* Contact Section */
-        section#contact a {
-            transition: background-color 0.3s ease;
-        }
-
-        section#contact a:hover {
-            background-color: #2b396d;
-        }
-
-        /* Footer Styling */
-        footer {
-            background-color: #2d3748; /* Darker gray */
-        }
-    </style>
 </head>
 
-<body class="bg-gray-50">
+<body class="bg-gray-100">
 
-    <!-- Navbar -->
-    <nav class="bg-gray-800 text-white py-4">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="flex justify-between items-center">
-                <div class="text-2xl font-semibold">SaaSPro</div>
-                <div class="space-x-8">
-                    <a href="#" class="hover:text-indigo-300">Home</a>
-                    <a href="#features" class="hover:text-indigo-300">Features</a>
-                    <a href="#pricing" class="hover:text-indigo-300">Pricing</a>
-                    <a href="#contact" class="hover:text-indigo-300">Contact</a>
+    <!-- Main Chat Layout -->
+    <div class="flex h-screen">
+
+        <!-- Sidebar for Contacts -->
+        <div class="bg-[#075E54] text-white w-1/4 p-6">
+            <div class="flex items-center mb-6">
+                <img class="w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/men/1.jpg" alt="User">
+                <div class="ml-4">
+                    <h2 class="text-xl font-semibold">John Doe</h2>
+                    <p class="text-sm text-gray-200">Online</p>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <!-- Contact 1 -->
+                <div class="flex items-center space-x-4 cursor-pointer hover:bg-[#128C7E] p-3 rounded-lg">
+                    <img class="w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/women/1.jpg" alt="Contact">
+                    <div>
+                        <p class="text-sm font-semibold">Jane Smith</p>
+                        <p class="text-xs text-gray-200">Hey there!</p>
+                    </div>
+                </div>
+                <!-- Contact 2 -->
+                <div class="flex items-center space-x-4 cursor-pointer hover:bg-[#128C7E] p-3 rounded-lg">
+                    <img class="w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/men/2.jpg" alt="Contact">
+                    <div>
+                        <p class="text-sm font-semibold">Michael Brown</p>
+                        <p class="text-xs text-gray-200">How's it going?</p>
+                    </div>
+                </div>
+                <!-- Contact 3 -->
+                <div class="flex items-center space-x-4 cursor-pointer hover:bg-[#128C7E] p-3 rounded-lg">
+                    <img class="w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/women/2.jpg" alt="Contact">
+                    <div>
+                        <p class="text-sm font-semibold">Alice Johnson</p>
+                        <p class="text-xs text-gray-200">Let me know when you are free.</p>
+                    </div>
+                </div>
+                <!-- Contact 4 -->
+                <div class="flex items-center space-x-4 cursor-pointer hover:bg-[#128C7E] p-3 rounded-lg">
+                    <img class="w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/men/3.jpg" alt="Contact">
+                    <div>
+                        <p class="text-sm font-semibold">David Lee</p>
+                        <p class="text-xs text-gray-200">Working on the project.</p>
+                    </div>
+                </div>
+                <!-- Contact 5 -->
+                <div class="flex items-center space-x-4 cursor-pointer hover:bg-[#128C7E] p-3 rounded-lg">
+                    <img class="w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/women/3.jpg" alt="Contact">
+                    <div>
+                        <p class="text-sm font-semibold">Sara Miller</p>
+                        <p class="text-xs text-gray-200">Call me when you get a chance.</p>
+                    </div>
+                </div>
+                <!-- Contact 6 -->
+                <div class="flex items-center space-x-4 cursor-pointer hover:bg-[#128C7E] p-3 rounded-lg">
+                    <img class="w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/men/4.jpg" alt="Contact">
+                    <div>
+                        <p class="text-sm font-semibold">George King</p>
+                        <p class="text-xs text-gray-200">Let's meet up soon!</p>
+                    </div>
+                </div>
+                <!-- Contact 7 -->
+                <div class="flex items-center space-x-4 cursor-pointer hover:bg-[#128C7E] p-3 rounded-lg">
+                    <img class="w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/women/4.jpg" alt="Contact">
+                    <div>
+                        <p class="text-sm font-semibold">Laura James</p>
+                        <p class="text-xs text-gray-200">Great to hear from you!</p>
+                    </div>
+                </div>
+                <!-- Contact 8 -->
+                <div class="flex items-center space-x-4 cursor-pointer hover:bg-[#128C7E] p-3 rounded-lg">
+                    <img class="w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/men/5.jpg" alt="Contact">
+                    <div>
+                        <p class="text-sm font-semibold">Tom Harris</p>
+                        <p class="text-xs text-gray-200">Let's catch up soon!</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="relative bg-indigo-600 text-white py-32 px-6 text-center">
-        <div class="max-w-3xl mx-auto">
-            <h1 class="text-5xl font-bold leading-tight">The Future of SaaS Solutions</h1>
-            <p class="mt-6 text-xl">Everything you need to grow and scale your business efficiently.</p>
-            <div class="mt-8">
-                <a href="#pricing"
-                   class="bg-indigo-800 px-6 py-3 text-lg font-semibold rounded-full hover:bg-indigo-700 transition duration-300">Get Started</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center text-gray-800">Features</h2>
-            <div class="grid md:grid-cols-3 gap-12 mt-10">
-                <div class="text-center p-6 border rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-semibold text-indigo-600">User Friendly</h3>
-                    <p class="mt-4 text-lg text-gray-600">Our platform is designed with simplicity and ease of use in mind, ensuring everyone can get started quickly.</p>
+        <!-- Chat Area -->
+        <div class="flex-1 bg-white">
+            <div class="flex justify-between items-center border-b p-4 bg-[#25D366]">
+                <div class="flex items-center space-x-4">
+                    <img class="w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/women/1.jpg" alt="Contact">
+                    <div>
+                        <p class="text-lg font-semibold">Jane Smith</p>
+                        <p class="text-sm text-gray-200">Online</p>
+                    </div>
                 </div>
-                <div class="text-center p-6 border rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-semibold text-indigo-600">Fast & Reliable</h3>
-                    <p class="mt-4 text-lg text-gray-600">Enjoy lightning-fast performance with high availability to ensure your business runs smoothly.</p>
-                </div>
-                <div class="text-center p-6 border rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-semibold text-indigo-600">Scalable</h3>
-                    <p class="mt-4 text-lg text-gray-600">Our solution grows with your business, offering the flexibility to scale as your needs change.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section id="pricing" class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center text-gray-800">Pricing</h2>
-            <div class="mt-10 grid md:grid-cols-3 gap-12">
-                <div class="bg-white border p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold text-gray-800">Basic</h3>
-                    <p class="text-2xl text-indigo-600 mt-4">$19/month</p>
-                    <p class="mt-6 text-lg text-gray-600">Perfect for individuals and small businesses.</p>
-                    <a href="#contact" class="mt-8 block text-center bg-indigo-600 text-white py-2 rounded-full hover:bg-indigo-700 transition">Get Started</a>
-                </div>
-                <div class="bg-white border p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold text-gray-800">Standard</h3>
-                    <p class="text-2xl text-indigo-600 mt-4">$49/month</p>
-                    <p class="mt-6 text-lg text-gray-600">For growing businesses needing more features.</p>
-                    <a href="#contact" class="mt-8 block text-center bg-indigo-600 text-white py-2 rounded-full hover:bg-indigo-700 transition">Get Started</a>
-                </div>
-                <div class="bg-white border p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold text-gray-800">Premium</h3>
-                    <p class="text-2xl text-indigo-600 mt-4">$99/month</p>
-                    <p class="mt-6 text-lg text-gray-600">All features with priority support for large businesses.</p>
-                    <a href="#contact" class="mt-8 block text-center bg-indigo-600 text-white py-2 rounded-full hover:bg-indigo-700 transition">Get Started</a>
+                <div class="flex space-x-4">
+                    <!-- Video Call Button -->
+                    <button class="text-white hover:bg-[#128C7E] p-2 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 21l4-4m0 0l-4-4m4 4H7" />
+                        </svg>
+                    </button>
+                    <!-- Normal Call Button -->
+                    <button class="text-white hover:bg-[#128C7E] p-2 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.8c0 .62-.49 1.12-1.1 1.12h-4.9c-.62 0-1.1-.49-1.1-1.12V8.72c0-.62.49-1.12 1.1-1.12h4.9c.62 0 1.1.49 1.1 1.12v4.08z" />
+                        </svg>
+                    </button>
+                    <!-- Three Dots Menu Button -->
+                    <button class="text-white hover:bg-[#128C7E] p-2 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 6h8M8 12h8M8 18h8" />
+                        </svg>
+                    </button>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-indigo-600 text-white">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <h2 class="text-4xl font-bold">Get In Touch</h2>
-            <p class="mt-6 text-lg">Have questions? Reach out to us, and we'll be happy to help!</p>
-            <a href="mailto:info@saaspro.com"
-               class="mt-8 inline-block bg-indigo-800 text-white px-6 py-3 text-lg font-semibold rounded-full hover:bg-indigo-700 transition">Contact Us</a>
-        </div>
-    </section>
+            <!-- Chat Messages -->
+            <div class="p-6 space-y-6 h-96 overflow-y-auto scrollbar-thin scrollbar-thumb-rounded-lg">
+                <!-- Message from User -->
+                <div class="flex justify-start">
+                    <div class="bg-[#25D366] text-white p-4 rounded-lg max-w-xs shadow-md">
+                        Hi! How are you?
+                    </div>
+                </div>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-6">
-        <div class="max-w-7xl mx-auto text-center">
-            <p>&copy; 2026 SaaSPro. All rights reserved.</p>
+                <!-- Message from Contact -->
+                <div class="flex justify-end">
+                    <div class="bg-[#ECE5DD] text-gray-800 p-4 rounded-lg max-w-xs shadow-md">
+                        I'm good, thanks! How about you?
+                    </div>
+                </div>
+
+                <!-- Message from User -->
+                <div class="flex justify-start">
+                    <div class="bg-[#25D366] text-white p-4 rounded-lg max-w-xs shadow-md">
+                        I'm doing well, just busy with work!
+                    </div>
+                </div>
+
+                <!-- Message from Contact -->
+                <div class="flex justify-end">
+                    <div class="bg-[#ECE5DD] text-gray-800 p-4 rounded-lg max-w-xs shadow-md">
+                        I understand. Work can get pretty busy!
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Chat Input -->
+            <div class="bg-[#ECE5DD] p-4 flex items-center space-x-4 border-t">
+                <input type="text" class="flex-1 p-3 rounded-full border border-gray-300 focus:outline-none" placeholder="Type a message...">
+                <button class="bg-[#25D366] text-white p-3 rounded-full hover:bg-[#128C7E]">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6l12 6-12 6V6z"/>
+                    </svg>
+                </button>
+            </div>
         </div>
-    </footer>
+    </div>
 
 </body>
 
 </html>
-
